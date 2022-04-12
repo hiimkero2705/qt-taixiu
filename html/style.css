@@ -1,0 +1,215 @@
+html {
+	overflow: hidden;
+}
+body{
+        margin: 0px;
+	padding: 0px;
+    }
+
+#container {
+	
+position: absolute;
+	
+
+	
+display: none;
+	
+left: 17%; /*25*/
+	
+width: 66.211vw; /*958px;*/
+	
+height: 60.593vh;
+	
+color: white;
+	
+
+	
+flex-direction: column;
+}
+    .main {
+        background: url('imgs/img.png') no-repeat -1150px -2px;
+        width: 771px;
+        height: 507px;
+        margin:auto;
+        position: relative;
+        text-align: center;
+        transform: scale(0.5, 0.5);
+    }
+    .xiu {
+        background: url('imgs/img.png') no-repeat -343px -867px;
+        width: 130px;
+        height: 74px;
+        position: absolute;
+        left: 98px;
+        top: 190px;
+        animation: zoomout 0.2s ease-in-out infinite alternate;
+    }
+    .tai {
+        background: url('imgs/img.png') no-repeat -1290px -870px;
+        width: 108px;
+        height: 68px;
+        position: absolute;
+        right: 98px;
+        top: 190px;
+        animation: zoomout 0.2s ease-in-out infinite alternate;
+    }
+    .user {
+        background: url('imgs/img.png') no-repeat -1970px -416px;
+        width: 26px;
+        height: 34px;
+        position: absolute;
+        right: 200px;
+        top: 380px;
+    }
+    .dragon {
+        background: url('imgs/img.png') no-repeat -1538px -514px;
+        width: 317px;
+        height: 309px;
+        position: absolute;
+        left: 230px;
+        top: 130px;
+        animation: spin 5s linear infinite;
+    }
+    .input{
+        width: 200px;
+        height: 60px;
+        border-radius: 50px;
+        position: absolute;
+        left: 45px;
+        top: 305px;
+        outline: 0;
+        text-align: center;
+        font-size: 30px;
+        background: 0;
+        border: 0;
+        color : #fff;
+    }
+
+    .txt{
+        padding-top: 430px;
+        text-align: center;
+        top: 300px;
+    }
+    .statustxt{
+        font-size: 25px;
+        font-weight: bold;
+        font-family: "Segoe UI";
+        top: 500px;
+        text-shadow: 0 0 3px #000;
+        color: yellow;
+        transition: 0.5s;
+        opacity: 1;
+    }
+    .usertxt{
+        font-size: 25px;
+        font-weight: bold;
+        font-family: "Segoe UI";
+        top: 500px;
+        text-shadow: 0 0 3px #000;
+        color: white;
+    }
+    .dice{
+        position: absolute;
+    }
+    .dice1{
+        background: url('imgs/dice.png') no-repeat -507px -2px;
+        width: 98px;
+        height: 96px;
+        transform: scale(0.8) rotate(-20deg);
+        left: 340px;
+        top: 200px;
+        opacity: 0;
+    }
+    .dice2{
+        background: url('imgs/dice.png') no-repeat -404px -3px;
+        width: 98px;
+        height: 96px;
+        transform: scale(0.8) rotate(20deg);
+        left: 300px;
+        top: 270px;
+        opacity: 0;
+    }
+    .dice3{
+        background: url('imgs/dice.png') no-repeat 0 -2px;
+        width: 98px;
+        height: 96px;
+        transform: scale(0.8) rotate(10deg);
+        left: 380px;
+        top: 270px;
+        opacity: 0;
+    }
+    .khung {
+        background: url('imgs/img.png') no-repeat -1107px -828px;
+        width: 179px;
+        height: 45px;
+        transform: scale(0.6);
+        position: absolute;
+        left: 120px;
+        top: 135px;
+    }
+    .time{
+        font-size: 100px;
+        font-family: 'Intro', sans-serif;
+        font-weight: 800;
+        text-transform: uppercase;
+        /* Warning: no fallback */
+        
+        background: -webkit-linear-gradient(-86deg, #660610 5%, black 53%, #0A99B8 91%);
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 8px transparent;
+        color: white;
+        position: absolute;
+        left: 320px;
+        top: 200px;
+		
+    }
+    @keyframes spin {
+        0% { transform: rotate(360deg); }
+        100% { transform: rotate(0deg); }
+    }
+    @keyframes zoomout {
+        0% {
+            transform: scale(1.0);
+        }
+        100% {
+            transform: scale(1.2);
+        }
+    }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+button.close{
+    padding: 20px;
+    border-radius: 10vw;
+    background-color: #ce1212;
+    color :#eeebdd;
+    font-size: 2rem;
+    position: absolute;
+    top: 100px;
+    right: 50px;
+    border: none;
+}
+button.esc{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ce1212;
+    color :#eeebdd;
+    font-size: 1.5rem;
+    border: none;
+}
+.help{
+    width: 450px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ce1212;
+    color :#eeebdd;
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: -300px;
+    left: 150px;
+    border: none;
+}
+button:hover{
+    background-color: #ffd56b;
+}

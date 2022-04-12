@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Game Tài Xỉu Online</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="container">
+    <div class="main">
+        <button class="close">X</button>
+        
+        <div class="help">
+            <button class="esc" id="esc">ESC : ẩn con trỏ chuột</button>
+            <p>Giữ chuột trái và kéo để di chuyển bàn tài xỉu</p>
+            <p>Nhấn lại dấu "=" để hiện con trỏ chuột</p>
+            <button class="esc" id="close-help">Nhấn vào đây để tắt bảng hướng dẫn này</button>
+        </div>
+        <div id="dragon" class="dragon"></div>
+        <div class="khung"></div>
+        <div id="time" class="time"></div>
+        <p id="id" class="statustxt" style="position: absolute; opacity : 1; left: 180px;top: 130px; font-size: 17px"></p>
+        <div id="taitxt" class="tai"></div>
+        <div id="xiutxt" class="xiu"></div>
+        <p id="sumxiu" class="usertxt" style="position: absolute; left: 115px;top: 242px;"></p>
+        <p id="sumtai" class="usertxt" style="position: absolute; right: 130px;top: 242px;"></p>
+        <div id="dice1" class="dice dice1"></div>
+        <div id="dice2" class="dice dice2"></div>
+        <div id="dice3" class="dice dice3"></div>
+        <div class="user"></div>
+        <div class="user" style="left: 80px;"></div>
+        <input id="pullxiu" class="input" type="number">
+        <input id="pulltai" class="input" type="number" style="left: 525px;">
+        <img src="" id="roll" style="position: absolute; left:300px; top: 190px; transition: 0.5s;opacity: 0; width: 180px"/>
+        <p id="userxiu" class="usertxt" style="position: absolute; left: 115px;top: 352px;"></p>
+        <p id="usertai" class="usertxt" style="position: absolute; right: 180px;top: 352px;"></p>
+        <div class="txt">
+
+            <!-- <p id="statustxt" class="statustxt">
+            </p> -->
+        </div>
+        
+            
+    </div>
+	</div>
+</body>
+
+
+
+</html>
