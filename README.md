@@ -12,4 +12,4 @@
 * Ấn dấu `=` để mở UI
 * Sử dụng lệnh `/battaixiu` để cho phép người chơi tham gia tài xỉu
 
-
+DONE
